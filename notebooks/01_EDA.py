@@ -13,9 +13,6 @@ df['date'] = pd.to_datetime(df['date'])
 # 2. 油温(OT)をグラフにする
 plt.figure(figsize=(12, 6))
 plt.plot(df['date'], df['OT'])
-
-# 軸の見た目を調整（月ごとに表示したい場合）
-# 自動調整でも綺麗になりますが、明示的に指定するなら以下を使います
 plt.gca().xaxis.set_major_locator(mdates.MonthLocator(interval=3)) # 3ヶ月ごとにメモリを打つ
 plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m')) # "2016-07" のように表示
 
