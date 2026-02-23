@@ -17,7 +17,7 @@
 
 ```text
 .
-├── data/                    # データセット (ETTm2.csv 推奨)
+├── data/                    # データセット
 ├── experiments/             # EDAや没にしたグラフ生成スクリプトなど
 ├── report/
 │   ├── generate_report.py   # 【実行対象】検証レポート・グラフ生成スクリプト
